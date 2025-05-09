@@ -1,0 +1,33 @@
+// Class definition: Blueprint or template that defines the structure and behavior of a group of similar objects
+class Car {
+    // Properties of the car
+    String color;
+    String model;
+    int year;
+
+    void displayInfo() {
+        System.out.println("Car Model: " + model + ", Year: " + year + ", Color: " + color);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Object creation: car1 is an object of the Car class
+        Car car1 = new Car();
+        car1.color = "White";
+        car1.model = "Volkswagen Jetta";
+        car1.year = 2019;
+
+        // Object creation: car2 is another object of the Car class
+        Car car2 = new Car();
+        car2.color = "White";
+        car2.model = "Tesla Model 3";
+        car2.year = 2023;
+
+        // Display information of each car
+        car1.displayInfo(); // Output details for car1
+        car2.displayInfo(); // Output details for car2
+
+        // Each object (car) has its own data, even though they use the same class
+    }
+}
